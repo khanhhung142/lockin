@@ -1,6 +1,8 @@
 # UI gate
 
-A UI ticket is not `done` when the fields merely exist. It is done when it is **correct AND readable**. "Đủ field nhưng rối mắt" (all fields present but visually cluttered) is a gate failure, not a pass.
+A UI ticket is not `done` when the fields merely exist.
+It is done when it is **correct AND readable**.
+All fields present but visually cluttered is a gate failure, not a pass.
 
 Run this gate inside the implementer subagent, before it reports done. Two parts:
 
