@@ -56,6 +56,7 @@ Ported from Lauren Tan's pstack playbooks (MIT, copyright 2026 Lauren Tan, see `
 - **Questions.** Business questions (what users see, do or pay, scope, UX, data meaning, permissions, accepting a perf budget miss) go to the user and are never defaulted.
   Technical questions get decided, logged as one line `question - decision - why` in `.scratch/<feature>/DECISIONS.md`, and work continues.
   While a business question waits, keep working on everything it does not block.
+  Ask in the plain format of the `tactics` skill: a numbered question per line, the recommendation on the next line after `->`, and "ok" accepts them all.
 - **Reversible work proceeds** without asking: local commits, worktrees, scratch files, targeted tests, local stacks, reading anything.
   **Irreversible work waits for the user's explicit go**: push, opening or merging an MR, force-push, deploy, data deletion, and messaging people (chat, tickets, email, MR comments).
   "Keep going" or "going to bed" keeps reversible work moving; it never grants an irreversible action.
@@ -77,7 +78,7 @@ Ported from Lauren Tan's pstack playbooks (MIT, copyright 2026 Lauren Tan, see `
 
 ## Skills the playbooks route to
 
-`grind`, `to-spec`, `to-tickets`, `tdd`, `diagnosing-bugs`, `code-review`, `simplify`, `research`, `huddle`, `replay`, `spar`, `lore`, `splash`, `writing-for-agents`.
+`grind`, `to-spec`, `to-tickets`, `tdd`, `diagnosing-bugs`, `code-review`, `simplify`, `research`, `tactics`, `replay`, `spar`, `lore`, `splash`, `writing-for-agents`.
 Arena is `~/.claude/skills/grind/references/arena.md`, usable for one shape-setting change outside a grind run.
 
 ## Usage data

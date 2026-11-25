@@ -31,14 +31,14 @@ Rerun `./install.sh` after a pull that adds, renames or removes a skill; it link
 ## The flow
 
 ```text
-warmup ─► lockin ─► huddle ─► /to-spec ─► /to-tickets ─► grind ─► ship (MR) ─► replay
+warmup ─► lockin ─► tactics ─► /to-spec ─► /to-tickets ─► grind ─► ship (MR) ─► replay
  (once)   (mode)    gate 1       gate 2      gate 3         unattended  gate 4      (learn)
 ```
 
 | Step | What happens | Gate (the user decides) |
 | --- | --- | --- |
 | `warmup` | One-time project setup so agents need no setup conversation. | - |
-| `huddle` | Round-by-round questions until the core behaviour is clear. | Gate 1: the behaviour is right. |
+| `tactics` | Round-by-round questions until the core behaviour is clear. | Gate 1: the behaviour is right. |
 | `/to-spec` | One authoritative spec; business questions settled, not defaulted. | Gate 2: the spec. |
 | `/to-tickets` | The spec split into tickets with blockers under `.scratch/<feature>/issues/`. | Gate 3: go to build. |
 | `grind` | Builds the tickets wave by wave in worktrees, each proven once, then reconciles the whole spec. | Business questions block only their own ticket. |
@@ -53,7 +53,7 @@ Single-owner work (a bug, a refactor, a perf issue, an investigation) skips the 
 | --- | --- |
 | `lockin` | Sticky mode and router; every message goes through the flow above. |
 | `warmup` | One-time project setup: project and repo `AGENTS.md`, glossary and ADRs, shared-infra DB seed, a `verify-<project>` skill, `design-rules.md`. |
-| `huddle` | Shapes a plan or feature with the user, one round of questions at a time, each with a recommended answer. |
+| `tactics` | Shapes a plan or feature with the user, one round of questions at a time, each with a recommended answer. |
 | `grind` | Resumable multi-ticket orchestrator: waves, worktrees, verify-once, UI and perf gates, arena, spar, spec coverage, replay report. |
 | `playbook` | 23 step-by-step playbooks for single-owner work, with usage logging for pruning (`playbook.sh report`). |
 | `replay` | Mines sessions for repeated mistakes and fixes each at the highest level that works. |

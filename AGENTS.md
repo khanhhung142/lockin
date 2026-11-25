@@ -7,7 +7,7 @@ For what lockin is and how to install it, read `README.md` first.
 ## The idea in plain terms
 
 lockin is a set of instructions (skills), helper agents, safety hooks and small tools that make coding agents work the way the user does.
-A human types `/lockin <task>`, and the `lockin` skill decides which step comes next: plan (`huddle`), spec, tickets, build (`grind`), prove, ship, learn (`replay`).
+A human types `/lockin <task>`, and the `lockin` skill decides which step comes next: plan (`tactics`), spec, tickets, build (`grind`), prove, ship, learn (`replay`).
 Agents may decide technical questions alone and log them; business questions (what users see, do or pay) always go to the user.
 Gates are points where the agent stops and waits for the user: behaviour confirmed, spec reviewed, go to build, go to push.
 Hooks stop the most expensive mistakes mechanically instead of trusting prose: whole-suite test runs, pushes to `main`, worktrees in the wrong place, branch switches in the user's checkout.
@@ -34,7 +34,7 @@ Older sessions, logs and project notes still use the names from before the renam
 | --- | --- | --- |
 | `lockin` | `lockin-mode` | Sticky mode and router. |
 | `warmup` | `lockin-prep` | One-time project setup. |
-| `huddle` | `shape` | Settle the behaviour with the user before building. |
+| `tactics` | `shape` | Settle the behaviour with the user before building. |
 | `grind` | `drive` | Unattended multi-ticket orchestrator (`grind.sh` was `drive.sh`). |
 | `playbook` | `playbook` | Step-by-step playbooks for single-owner work. |
 | `replay` | `retro` | Fix the cause of repeated agent mistakes. |

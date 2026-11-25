@@ -6,7 +6,7 @@ The plan is the deliverable; do not implement.
 
 1. When the change is one or two files with an obvious approach, skip the plan, say so, and stop.
 2. Settle open technical questions by prototype (`prototype.md`) before writing.
-   Ask the user only the business questions no run can settle, through the `huddle` skill when there are several.
+   Ask the user only the business questions no run can settle, through the `tactics` skill when there are several.
 3. Write the spec with `/to-spec`, then the tickets with `/to-tickets`, so `/grind` can execute them.
    Open the spec with what changes, the MRs in landing order, and the dependency graph: which branch from the integration branch, which wait for which, and the files each may touch.
 4. Make each ticket one MR with its own evidence, with checkboxes for: what it depends on, the files it edits, the one change it builds, the result you see, and its verification.

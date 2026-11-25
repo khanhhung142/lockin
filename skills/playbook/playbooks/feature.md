@@ -10,7 +10,7 @@ This playbook covers a feature one owner can build, and the design steps (trace,
 2. Name the data shape and its organizing structure before any logic: a state machine over scattered booleans, a table or registry over branching, a typed model over repeated shape assumptions.
    Name which service owns each piece of state.
    A shape that is expensive to change later (DB or ent schema, `.api` or `.proto` contract, public API, error model) runs arena per `~/.claude/skills/grind/references/arena.md`.
-   Contested product behaviour goes to the user, ideally through the `huddle` skill.
+   Contested product behaviour goes to the user, ideally through the `tactics` skill.
 3. Write the throughput checkpoint as four todo items; an item that does not apply keeps its line as `n/a: <reason>`:
 
    - **Blocking first steps**: what must land before fan-out (migration, shared type, generated code).

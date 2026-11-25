@@ -6,7 +6,7 @@ Most "missed requirement" failures are born before Grind runs: in a spec built o
 
 Before writing user stories, pin down what the system fundamentally *does*, in behavioural terms, and read it back to the user for confirmation. A label is not a definition: "model gateway" was accepted as a label and silently built as an access-checker when the user meant an OpenRouter-style proxy that itself calls the providers - the error survived a 3-hour grilling session and surfaced only on human review.
 
-Use the `huddle` skill on the **core behaviour specifically**: "when X happens, what exactly does the system do, and who calls whom?" Do not move on from the core until the user confirms the behaviour, not just the name.
+Use the `tactics` skill on the **core behaviour specifically**: "when X happens, what exactly does the system do, and who calls whom?" Do not move on from the core until the user confirms the behaviour, not just the name.
 
 ## 2. Collapse conflicting sources into one spec
 
