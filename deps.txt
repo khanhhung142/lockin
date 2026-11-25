@@ -1,0 +1,3 @@
+# Skills lockin routes to but does not ship. Format: <skills-cli package> <skill,skill,...>
+# install.sh checks ~/.agents/skills (and ~/.claude/skills) and, with --with-deps, installs what is missing via `npx skills add -g`.
+mattpocock/skills domain-modeling,to-spec,to-tickets,tdd,diagnosing-bugs,code-review,research,resolving-merge-conflicts,writing-for-agents

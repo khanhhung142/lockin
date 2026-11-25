@@ -1,0 +1,6 @@
+// One full sentence per line (house rule) makes long lines intentional.
+// UPSTREAM.md is a verbatim upstream snapshot kept for diffing, so it is not linted.
+{
+  "config": { "MD013": false },
+  "ignores": ["skills/replay/UPSTREAM.md"]
+}
